@@ -1,0 +1,22 @@
+# Archives & Temporary Extractions
+*.zip
+extracted_project/
+Face Recognition-20261121T045235Z-1-001/
+Face Recognition-20261121T045235Z-1-002/
+npz_extracted/
+
+# Cache & Temporary NPZ
+*.npz
+*.npy
+cache_*/
+embeddings_cache_*/
+
+# Node & Python
+node_modules/
+npm-debug.log*
+__pycache__/
+*.py[cod]
+
+# System Files
+.DS_Store
+Thumbs.db

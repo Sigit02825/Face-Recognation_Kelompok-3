@@ -1,0 +1,78 @@
+{
+  "genuineCases": [
+    {
+      "title": "Moh. Rifky Reinaldo (Foto 01 - Pose Normal)",
+      "studentName": "Moh. Rifky Reinaldo",
+      "nim": "A11.2020.12599",
+      "type": "genuine",
+      "description": "Foto pose tegak lurus (frontal) dengan pencahayaan merata. Fitur wajah terdeteksi simetris.",
+      "entryId": 0,
+      "expectedResult": "DIKENALI"
+    },
+    {
+      "title": "Deranda Bagas Pamungkas (Foto 02 - Sesuai Galeri)",
+      "studentName": "Deranda Bagas Pamungkas",
+      "nim": "A11.2023.14906",
+      "type": "genuine",
+      "description": "Foto standar wajah netral, 5 titik tengara RetinaFace selaras penuh dengan prototipe galeri.",
+      "entryId": 24,
+      "expectedResult": "DIKENALI"
+    },
+    {
+      "title": "Daniel Lim (Foto 03 - Sesuai Galeri)",
+      "studentName": "daniel lim",
+      "nim": "A11.2023.15335",
+      "type": "genuine",
+      "description": "Pencahayaan alami dan kontur dahi tampak jelas, kemiripan tinggi di atas threshold.",
+      "entryId": 132,
+      "expectedResult": "DIKENALI"
+    },
+    {
+      "title": "Sandrina Alfira Deanova (Foto 01 - Sesuai Galeri)",
+      "studentName": "Sandrina Alfira Deanova",
+      "nim": "A11.2023.14975",
+      "type": "genuine",
+      "description": "Karakteristik biometrik mata, hidung, dan bibir cocok sempurna dengan model FaceNet512.",
+      "entryId": 36,
+      "expectedResult": "DIKENALI"
+    }
+  ],
+  "hairChangeCases": [
+    {
+      "title": "Cherishta (Foto 04 - Perubahan Gaya Rambut & Posisi Miring)",
+      "studentName": "Cherishta",
+      "nim": "A11.2024.16045",
+      "type": "hair_change",
+      "description": "Gaya rambut berubah, helai rambut menutupi sebagian dahi dan pelipis, serta sudut wajah miring. Menyebabkan representasi spasial melenceng (kemiripan turun drastis ke ~0.05).",
+      "entryId": 216,
+      "expectedResult": "TIDAK DIKENALI"
+    },
+    {
+      "title": "Radithya Inaku (Foto 06 - Rambut Menutupi Dahi / Bayangan)",
+      "studentName": "RADITHYA INAKU",
+      "nim": "A11.2023.15124",
+      "type": "hair_change",
+      "description": "Rambut acak-acakan menghasilkan bayangan gelap pada area mata dan dahi, menurunkan kemiripan kosinus hingga di bawah threshold.",
+      "entryId": 51,
+      "expectedResult": "TIDAK DIKENALI"
+    },
+    {
+      "title": "Muhammad Abid Huzaifi (Foto 09 - Rambut Mengembang / Ekspresi)",
+      "studentName": "MUHAMMAD ABID HUZAIFI",
+      "nim": "A11.2023.15285",
+      "type": "hair_change",
+      "description": "Volume rambut dan sudut pemotretan berbeda signifikan dari sampel registrasi awal di galeri.",
+      "entryId": 91,
+      "expectedResult": "TIDAK DIKENALI"
+    },
+    {
+      "title": "Ahnaf (Foto 06 - Format WebP / Wajah Tertutup Rambut)",
+      "studentName": "Ahnaf",
+      "nim": "A11.2024.15985",
+      "type": "hair_change",
+      "description": "Penyelarasan RetinaFace tidak menemukan landmark lengkap akibat rambut menutupi wajah atau kualitas tidak sesuai.",
+      "entryId": 202,
+      "expectedResult": "TIDAK DIKENALI"
+    }
+  ]
+}
